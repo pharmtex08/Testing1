@@ -1,3 +1,28 @@
+<?php
+              
+
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['title']) && isset($_POST['message']))
+{
+
+$name=$_POST['name'];
+$email=$_POST['email'];
+
+$title=$_POST['title'];
+
+$message=$_POST['message'];
+
+
+
+$fp = fopen('data.txt', 'a'); 
+$savestring = " NAME - ".$name." EMAIL - ".$email." TITLE - ".$title." MESSAGE - ".$message.'\r\n';
+fwrite($fp, $savestring);
+
+fclose($fp);
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -201,14 +226,20 @@
 <body>
 <div class="container">
 <div id="header">
-<center><img src="https://res.cloudinary.com/femsoft/image/upload/v1566546253/Task2/passport10kb_hm6zva.jpg" style="width:120px;height:150px;"></center>
+<center><img src="https://res.cloudinary.com/femsoft/image/upload/v1566546253/Task2/passport10kb_hm6zva.jpg" 
+
+style="width:120px;height:150px;"></center>
 <p id="name"> <center><h1>OYEMADE OLUFEMI ISAIAH</h1></center> </p>
     <center> 
       
     <p 
-    <span="Address"><i class="large material-icons">home</i>&nbsp; No 1 Jolaade Close, Akinfenwa Street, Alakia, Ibadan, Oyo State, Nigeria</span><br>
+    <span="Address"><i class="large material-icons">home</i>&nbsp; No 1 Jolaade Close, Akinfenwa Street, Alakia, Ibadan, 
+
+Oyo State, Nigeria</span><br>
      <i class="large material-icons">phone </i><span class="tel">&nbsp; +2348069172143, +2348056124009</span><br />
-     <i class="large material-icons">mail </i><a class="email" href="mailto:pharmtex08@yahoo.com">&nbsp;pharmtex08@yahoo.com</a>
+     <i class="large material-icons">mail </i><a class="email" 
+
+href="mailto:pharmtex08@yahoo.com">&nbsp;pharmtex08@yahoo.com</a>
      </p></center>
  <br>   
      </div>
@@ -218,7 +249,13 @@
             <h3><i class="large material-icons">message</i>&nbsp;SUMMARY</h3>
             <hr width="100%" size="#" color="tomato">
             <p>
-                           Highly accomplished Operations & Maintenance Manager, IT Manager, Data Analyst, Quality Control Specialist and BSS Engineer with over Nine(9) years progressive IT/Enginering/Telecommunication experience demonstrating outstanding solution finding, client service, and team building skills with a proven record of delivering high-quality work with quick turnaround time.</p>
+                           Highly accomplished Operations & Maintenance Manager, IT Manager, Data Analyst, Quality Control 
+
+Specialist and BSS Engineer with over Nine(9) years progressive IT/Enginering/Telecommunication experience demonstrating 
+
+outstanding solution finding, client service, and team building skills with a proven record of delivering high-quality work 
+
+with quick turnaround time.</p>
         
    <div class="left">
      </div>
@@ -271,22 +308,38 @@
                 <li>Coordinate and manage  all O&M employee in the region to ensure customer SLA is achieved daily</li>
                 <li>Coordinate Passive operations of the region (Admin/Maintenance)</li>
                 <li>Ensure 99.99% power availability for all projects (INT/EMTS)</li>
-                <li>Overseen/coordinate all power project within the region and ensure that customer demands are met within the given timeline</li> <li>Manage and evaluate project needs, timeframes and budgetary estimates</li> 
+                <li>Overseen/coordinate all power project within the region and ensure that customer demands are met within 
+
+the given timeline</li> <li>Manage and evaluate project needs, timeframes and budgetary estimates</li> 
 <li>Participate in weekly client governance meetings as required  </li>
 <li>Liaise with clients, Project managers on project implementation plan for Network Solutions</li>
 <li>Diesel Management</li>
 <li>Maintaining Database of all Passive Maintenance Operations on projects in my region </li>
-<li>Coordinating, Scheduling & Tracking preventive maintenance for passive infrastructure facilities such as Generator(AC-DG & DC-DG),  Air Condition (AC & DC), <li>Janitorial, and other passive infrastructure facilities on site</li>
-<li>Sites Inspection(Spot-check) average no of 40 sites per month to check, ascertain and validate Quality of Preventive Maintenance (PPM, Janitorial and AC servicing) done on sites by our team.</li>
+<li>Coordinating, Scheduling & Tracking preventive maintenance for passive infrastructure facilities such as Generator(AC-
+
+DG & DC-DG),  Air Condition (AC & DC), <li>Janitorial, and other passive infrastructure facilities on site</li>
+<li>Sites Inspection(Spot-check) average no of 40 sites per month to check, ascertain and validate Quality of Preventive 
+
+Maintenance (PPM, Janitorial and AC servicing) done on sites by our team.</li>
 <li>Ensuring Spares(Consumables and Non Consumables spares) are always available in th warehouse for maintenance</li>
-<li>Issueing of spares to the field team and Tracking of spares usages, also ensure used spares(consumables filters ) are properly disposed according to environmental standard</li>
-<li>Monthly Maintenance spares (Routine and Non routine spares) request for procurement and reconciliation of spares received/used</li>
-<li>Planning, Tracking, Validation of all Non routine operations carried out on site by in-house teams or external contractor with pictures on a daily basis i.e. (Shelter repairs, Site palisade repairs, Crusher stone replacement, Security/Aviation light repair/replacement, AC repairs/replacement and DGs spares replacement)</li> 
+<li>Issueing of spares to the field team and Tracking of spares usages, also ensure used spares(consumables filters ) are 
+
+properly disposed according to environmental standard</li>
+<li>Monthly Maintenance spares (Routine and Non routine spares) request for procurement and reconciliation of spares 
+
+received/used</li>
+<li>Planning, Tracking, Validation of all Non routine operations carried out on site by in-house teams or external 
+
+contractor with pictures on a daily basis i.e. (Shelter repairs, Site palisade repairs, Crusher stone replacement, 
+
+Security/Aviation light repair/replacement, AC repairs/replacement and DGs spares replacement)</li> 
 <li>Preparing and sending of  weekly spares utilization report (Non routine and Routine spares)</li>
 <li>Reconciliation of daily Report of Preventive Passive Maintenance (PPM) carried out on sites with customer.</li>
 <li>Reporting faults on routine/non-routine maintenance and other escalations</li>
 <li>Collecting ACCESS REF from NOC for teams on any Routine and Non-routine activities to be carried out on sites</li>
-<li>Calling of Field Maintenance Engineers/Maintenance Supervisors on daily basis to gather information on Power Availability (PA) status, PPMs and other preventive maintenance related  issues on-site</li>
+<li>Calling of Field Maintenance Engineers/Maintenance Supervisors on daily basis to gather information on Power 
+
+Availability (PA) status, PPMs and other preventive maintenance related  issues on-site</li>
 <li>Monitoring performance of OPEX, PHCN, ACs, Rectifier, Aviation/Security Light  and DGs performance on sites</li>
 <li>Tracking Site Tower Maintenance team and sharing tower Audit report with customer</li>
       <hr  size="#"   > </ul>
@@ -302,21 +355,35 @@
             <ul>
          <li>Maintaining Database Analysis of all Maintenance Operations on projects </li>
 <li>Monitoring performance of Opex, AC and Generator performance on site on daily basis</li>
-<li>Planning & Scheduling preventive maintenance for passive infrastructure equipments such as generating set, Air Condition(AC) and other passive infrastructure facilities onsite</li>
-<li>Validating maintenance done on site by the Field Maintenance Engineer with the site past performance/outage history. </li> 
+<li>Planning & Scheduling preventive maintenance for passive infrastructure equipments such as generating set, Air 
+
+Condition(AC) and other passive infrastructure facilities onsite</li>
+<li>Validating maintenance done on site by the Field Maintenance Engineer with the site past performance/outage history. 
+
+</li> 
 <li>Escalating faulty passive infrastructure equipment on site for repair or replacement</li>
-<li>Monitoring Janitorial of the Base station sites i.e. Cleaning, Weeding, Tidying and Pest Control of the Base Station Sites. </li>
+<li>Monitoring Janitorial of the Base station sites i.e. Cleaning, Weeding, Tidying and Pest Control of the Base Station 
+
+Sites. </li>
 <li>Inspection of sites in term of Janitorial, AC maintenance, Aviation/security light on Tower.</li>
 <li>Sending Report of Maintenance operations on projects to the Maintenance Manager on daily basis.</li>
 <li>Conducting Diesel quality test through hydrometer to know the density of the diesel supplied to sites.</li>
 <li>Conducting Consumption per hour (CPH) Test on DG on the site to know the actual diesel consumption rate.</li>
 <li>Monitoring diesel pickup for Depot and Base Station sites supplied </li>
-<li>Tracking of Diesel through weekly diesel level information to expose any diesel theft on site and to monitor Generator diesel Consumption per hour (CPH).</li>
+<li>Tracking of Diesel through weekly diesel level information to expose any diesel theft on site and to monitor Generator 
+
+diesel Consumption per hour (CPH).</li>
 <li>Collecting Diesel Delivery Update for diesel supplied to each Base Station Sites for the customer</li>
 <li>Collection of Diesel Movement information from the Field Maintenance Engineers (FMEs) for approval by the customer</li>
-<li>Collecting and Preparing Weekly Diesel Level from Field Maintenance Engineers (FMEs) to know the actual diesel on site.</li>
-<li>Preparing DG consumption Trend to support claim in a site that consume more than agreed CPH locked for the site by the customer.</li>
-<li>Preparing Monthly Diesel Information to Reconcile with the customer for diesel consumption justification.</li>  <hr  size="#"  >   </ul>
+<li>Collecting and Preparing Weekly Diesel Level from Field Maintenance Engineers (FMEs) to know the actual diesel on 
+
+site.</li>
+<li>Preparing DG consumption Trend to support claim in a site that consume more than agreed CPH locked for the site by the 
+
+customer.</li>
+<li>Preparing Monthly Diesel Information to Reconcile with the customer for diesel consumption justification.</li>  <hr  
+
+size="#"  >   </ul>
             </p>
             
             
@@ -327,22 +394,38 @@
             <p id="job-responsibilities"><u>Job Responsbilities</u></p>
             <p>
             <ul>
-            <li>Installation and monitoring of LAN network (Wired/WIFI), Switches, Routers, Surveillance System (CCTV cameras)</li>
+            <li>Installation and monitoring of LAN network (Wired/WIFI), Switches, Routers, Surveillance System (CCTV 
+
+cameras)</li>
             <li>Computer installations and repairs</li>
             <li>Managing company websites/Office365 mail administrator</li>
             <li>Managing and monitoring of VPS mail server.</li>
             <li>Managing and monitoring of Microtik hotspot server</li>
             Training and helping staff on ICT knowledge and skills </li>
-            <li>Interpret data collected from sites, analyse results using statistical techniques and provide ongoing reports</li>
-            <li>Develop and implement data collection systems and other strategies that optimise statistical efficiency and data quality</li>
+            <li>Interpret data collected from sites, analyse results using statistical techniques and provide ongoing 
+
+reports</li>
+            <li>Develop and implement data collection systems and other strategies that optimise statistical efficiency and 
+
+data quality</li>
             <li>Acquire data from FMEs on site or Network operation centre and maintain databases/data systems.</li>
             <li>Identify, analyse, and interpret site trends or patterns in complex data sets.</li>
-            Filter and clean data, and review computer reports, printouts, and performance indicators to locate and <li>correct code problems.</li>
+            Filter and clean data, and review computer reports, printouts, and performance indicators to locate and 
+
+<li>correct code problems.</li>
             <li>Work closely with management to prioritise business and information needs.</li>
-            <li>Come up with new ideas and define new ways to improve and optimise business opportunities and new ways to cut costs.</li>
-            <li>Solving business relating problem by giving management insight, advice and guidance on the pulse of the business.</li>
-            <li>Analyse and evaluate ideas that comes up from people fairly and realistically in other to present reasonable business case to the management for go/no go decision.</li>
-            <li>Proving or dis-proving a wide variety of hypotheses by gathering evidence in support of or in denial of the hypotheses.</li><hr  size="#"></u1>
+            <li>Come up with new ideas and define new ways to improve and optimise business opportunities and new ways to 
+
+cut costs.</li>
+            <li>Solving business relating problem by giving management insight, advice and guidance on the pulse of the 
+
+business.</li>
+            <li>Analyse and evaluate ideas that comes up from people fairly and realistically in other to present 
+
+reasonable business case to the management for go/no go decision.</li>
+            <li>Proving or dis-proving a wide variety of hypotheses by gathering evidence in support of or in denial of the 
+
+hypotheses.</li><hr  size="#"></u1>
             </p>
  </ul>           
                     
@@ -352,20 +435,32 @@
     <p id="job-responsibilities"><u>Job Responsbilities</u></p>
        <p>
    <ul>
-    <li>Cordinating all IT staffs and resources of IT Department to ensure that daily routine maintenance  task are correctly achieved by the IT team.</li>
+    <li>Cordinating all IT staffs and resources of IT Department to ensure that daily routine maintenance  task are 
+
+correctly achieved by the IT team.</li>
           <li>Ensure smooth running of company IT equipments and time to time maintenance</li>
-          <li>Liasing with management on the needs of the department to improve the internet services given to customer and for high end connectivity security</li>
+          <li>Liasing with management on the needs of the department to improve the internet services given to customer and 
+
+for high end connectivity security</li>
           <li>Advise management on new Technology and IT improvement for better service delivery</li>
           <li>Organizing time to time  trainings for IT Team </li>
           <li>Training other staff on software and hardware;</li>
-          <li>Answer, evaluate and prioritize incoming helpdesk telephone, e-mail, and in-person requests for assistance from users experiencing problems with hardware, software, networking, and other computer-related technologies;
-          <li>Interview users to collect information about problem and leads user through diagnostic procedures to determine source of error;</li>
+          <li>Answer, evaluate and prioritize incoming helpdesk telephone, e-mail, and in-person requests for assistance 
+
+from users experiencing problems with hardware, software, networking, and other computer-related technologies;
+          <li>Interview users to collect information about problem and leads user through diagnostic procedures to 
+
+determine source of error;</li>
           <li>Investigate and troubleshoot issues; repair and recovery from hardware and software failures;</li>
-          <li>Communicate with vendors to resolve technical problems with internet, desktop computing software and hardware;</li>
+          <li>Communicate with vendors to resolve technical problems with internet, desktop computing software and 
+
+hardware;</li>
           <li>Managing and monitoring Online Reservation and Hotel Database;</li>
           <li>Provide technical assistance, support and network advice to the Company;</li>
           <li>Analyze and evaluate incident reports and make recommendations to reduce help line incident rate;</li>
-          <li>Installation and monitoring of LAN network (Wired/WIFI Hotspots), Switches, Routers, Surveillance System (CCTV cameras), Door Lock Solutions, Intercom and Satellite Stations.</li>
+          <li>Installation and monitoring of LAN network (Wired/WIFI Hotspots), Switches, Routers, Surveillance System 
+
+(CCTV cameras), Door Lock Solutions, Intercom and Satellite Stations.</li>
           
           <hr  size="#"></u1></p>
           
@@ -511,14 +606,18 @@
             <ul>
                 <li>
                 Operating Systems (Windows/Servers, Mac OS, Linux, Unix, iOS, Android OS, RouterOS)</li>
-                <li>Packages(Word/Excel/PowerPoint/Project/Access/Office365 suites/CorelDraw/Photoshop/Dreamweaver/CS, AutoCAD and Fireworks)</li>
+                <li>Packages(Word/Excel/PowerPoint/Project/Access/Office365 suites/CorelDraw/Photoshop/Dreamweaver/CS, 
+
+AutoCAD and Fireworks)</li>
                 <li>Internetworking (Wired/Wi-Fi LAN/ MIFI, Microtik Hotspot, Switches & Routers) </li>
                 <li>Database Administrator (Access/Tomcat/MYSQL/Oracle 10G), </li>
                 <li>Web Development  (PHP/ASPX.NET/HTML/JavaScript/Drupal/Basic CSS) </li>
                 <li>Programming/ software Development (VB 6.0, Visual Basic.NET and Basic Java)</li>
                 <li>Security Solution(CCTV/Biometrics/door locks/Time & attendance system)</li>
                 <li>System Maintenance, Repairs and Software management</li>
-                <li>OSS (Operations System Support) Citrix and ESM_CLIENT_NG (INALA), MOSS5100, MOSS7100 and I-MANAGER  software
+                <li>OSS (Operations System Support) Citrix and ESM_CLIENT_NG (INALA), MOSS5100, MOSS7100 and I-MANAGER  
+
+software
                 Footprint Service Core Software</li>
                 <li>Commissioning of GSM Radios, Huawei RTN605, RTN620, RTN910</li>
                 <li>Software commissioning of Node B and Script running</li>
